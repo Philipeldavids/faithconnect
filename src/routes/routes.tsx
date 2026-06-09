@@ -322,7 +322,7 @@ export const router =
     //   element:
     //     <UpcomingServices />,
     // },
-  ],
+  ]
 },
     {
       path: "*",

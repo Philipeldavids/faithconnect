@@ -14,7 +14,7 @@ import type { MenuItem } from "../types/navigation";
 export const navigation: MenuItem[] = [
   {
     title: "Dashboard",
-    path: "/dashboard",
+    path: "dashboard",
     icon: LayoutDashboard,
     roles: ["ChurchAdmin", "Pastor"],
   },
@@ -58,28 +58,28 @@ export const navigation: MenuItem[] = [
     {
       title: "Dashboard",
       path:
-        "/attendance/dashboard",
+        "attendance/dashboard",
          icon: Calendar,
         roles: ["ChurchAdmin", "Pastor"],
     },
     {
       title: "Register",
       path:
-        "/attendance/register",
+        "attendance/register",
          icon: Calendar,
         roles: ["ChurchAdmin", "Pastor"],
     },
     {
       title: "Manual Check-In",
       path:
-        "/attendance/checkin",
+        "attendance/checkin",
          icon: Calendar,
         roles: ["ChurchAdmin", "Pastor"],
     },
     {
       title: "Reports",
       path:
-        "/attendance/reports",
+        "attendance/reports",
          icon: Calendar,
         roles: ["ChurchAdmin", "Pastor"],
     },
