@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { useForm } from "react-hook-form";
 
@@ -145,7 +145,10 @@ const getDefaultRoute =
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold">
-           <img src={LogoUrl} alt="GHConnect"/>
+           <img 
+            height="100"    
+           width="250"           
+           src={LogoUrl} alt="GHConnect"/>
           </h1>
 
           <p className="text-slate-500 mt-2">
@@ -218,6 +221,13 @@ const getDefaultRoute =
               ? "Signing In..."
               : "Sign In"}
           </button>
+          <div>
+            <Link
+            to="/signup" 
+            >
+            Sign Up
+                </Link>
+          </div>
         </form>
       </div>
     </div>
