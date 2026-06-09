@@ -7,12 +7,13 @@ import PageHeader from "../../components/layouts/PageHeader";
 
 import { templateService }
 from "../../lib/api/templateService";
+import { type CreateTemplateDto } from "../../lib/types/template";
 
 export default function CreateTemplate() {
   const {
     register,
     handleSubmit,
-  } = useForm();
+  } = useForm<CreateTemplateDto>();
 
   const mutation =
     useMutation({
@@ -45,7 +46,7 @@ export default function CreateTemplate() {
         />
 
         <select
-          {...register("type")}
+          {...register("channel")}
           className="input w-full"
         >
           <option value="SMS">
@@ -64,7 +65,7 @@ export default function CreateTemplate() {
         />
 
         <textarea
-          {...register("content")}
+          {...register("body")}
           rows={8}
           className="input w-full"
         />

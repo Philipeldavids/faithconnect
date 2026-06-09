@@ -1,7 +1,7 @@
 export interface CreateTemplateDto {
   name: string;
 
-  chanel: string;
+  channel: string;
 
   subject?: string;
 
