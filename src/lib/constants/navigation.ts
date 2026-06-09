@@ -6,8 +6,7 @@ import {
   UsersIcon,
   Mail,
   Settings,
-  Shield,
-  Building2,
+  Shield, 
 } from "lucide-react";
 
 import type { MenuItem } from "../types/navigation";

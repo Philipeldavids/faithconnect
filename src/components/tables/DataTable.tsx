@@ -20,8 +20,7 @@ interface Props<T> {
 export default function DataTable<T>({
   data,
   columns,
-  actions,
-  pageSize
+  actions, 
 }: Props<T>) {
   return (
     <table className="w-full bg-white rounded-lg overflow-hidden">

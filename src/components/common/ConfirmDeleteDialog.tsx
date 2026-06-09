@@ -9,7 +9,6 @@ interface Props {
 export default function ConfirmDeleteDialog({
   open,
   title,
-  message,
   onConfirm,
   onCancel,
 }: Props) {

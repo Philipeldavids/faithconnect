@@ -1,24 +1,42 @@
 import api from "./axios";
+import type {
+  Template,
+  CreateTemplateDto,
+  UpdateTemplateDto,
+} from "../types/template";
 
 export const templateService = {
   list: () =>
-    api.get("/templates"),
+    api.get<Template[]>(
+      "/templates"
+    ),
 
   get: (id: string) =>
-    api.get(`/templates/${id}`),
+    api.get<Template>(
+      `/templates/${id}`
+    ),
 
-  create: (data: any) =>
-    api.post("/templates", data),
+  create: (
+    data: CreateTemplateDto
+  ) =>
+    api.post(
+      "/templates",
+      data
+    ),
 
   update: (
     id: string,
-    data: any
+    data: UpdateTemplateDto
   ) =>
     api.put(
       `/templates/${id}`,
       data
     ),
 
-  delete: (id: string) =>
-    api.delete(`/templates/${id}`),
+  delete: (
+    id: string
+  ) =>
+    api.delete(
+      `/templates/${id}`
+    ),
 };
