@@ -25,7 +25,7 @@ from "../../lib/store/authStore";
 export default function LoginPage() {
   const navigate =
     useNavigate();
-
+const LogoUrl = "https://res.cloudinary.com/dck7rspdt/image/upload/v1781008293/GhConnectLogo_n8yk7q.png";
   const setAuth =
     useAuthStore(
       (x) => x.setAuth
@@ -145,7 +145,7 @@ const getDefaultRoute =
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold">
-            FaithConnect
+           <img src={LogoUrl} alt="GHConnect"/>
           </h1>
 
           <p className="text-slate-500 mt-2">
