@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   //baseURL: import.meta.env.VITE_API_URL ?? "https://localhost:44359/api"
-  baseURL: "https://ghconnect.onrender.com/"
+  baseURL: "https://ghconnect.onrender.com/api"
 });
 
 api.interceptors.request.use((config) => {
