@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
-
+import toast from "react-hot-toast";
 import { memberService } from "../../lib/api/memberService";
 import { departmentService } from "../../lib/api/departmentService";
 
@@ -36,6 +36,9 @@ export default function AssignMemberForm({
     });
 
     onSuccess();
+     toast.success(
+              "Member assigned"
+            );
   };
 
   return (

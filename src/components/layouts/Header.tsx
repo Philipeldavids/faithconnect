@@ -72,7 +72,7 @@ export default function Header() {
     () => {
       logout();
 
-      navigate("/login");
+      navigate("/");
     };
 
   const fullName =
@@ -118,7 +118,7 @@ export default function Header() {
           cursor-pointer
         "
         onClick={() =>
-          navigate("/")
+          navigate("/dashboard")
         }
       >
         <img
@@ -346,7 +346,7 @@ export default function Header() {
                     );
 
                     navigate(
-                      "/"
+                      "/dashboard"
                     );
                   }}
                 >

@@ -2,6 +2,11 @@ import {
   createBrowserRouter,
   Navigate,
 } from "react-router-dom";
+import TemplateDetails
+from "../pages/communications/TemplateDetails";
+
+import EditTemplate
+from "../pages/communications/EditTemplate";
 
 
 import MemberDashboard from "../pages/memberportal/MemberDashboard";
@@ -147,13 +152,13 @@ export const router =
             <AttendancePage />,
         },
 
-        {
-          path:
-            "attendance/reports",
+        // {
+        //   path:
+        //     "attendance/reports",
 
-          element:
-            <AttendanceReports />,
-        },
+        //   element:
+        //     <AttendanceReports />,
+        // },
 
         // Communications
 
@@ -179,6 +184,21 @@ export const router =
           element:
             <CreateTemplate />,
         },
+        {
+  path:
+    "communications/templates/:id",
+
+  element:
+    <TemplateDetails />,
+},
+
+{
+  path:
+    "communications/templates/edit/:id",
+
+  element:
+    <EditTemplate />,
+},
         {
           path:
             "communications/templates",

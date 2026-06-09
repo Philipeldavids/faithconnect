@@ -4,12 +4,17 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
 import PageHeader from "../../components/layouts/PageHeader";
-
+import {
+  useNavigate 
+} from "react-router-dom";
 import { templateService }
 from "../../lib/api/templateService";
 import { type CreateTemplateDto } from "../../lib/types/template";
 
 export default function CreateTemplate() {
+
+  const navigate =
+    useNavigate();
   const {
     register,
     handleSubmit,
@@ -20,10 +25,14 @@ export default function CreateTemplate() {
       mutationFn:
         templateService.create,
 
-      onSuccess: () =>
+      onSuccess: () => {
         toast.success(
           "Template created"
-        ),
+        );
+        navigate(
+          "/dashboard/communications/templates"
+        );
+      }
     });
 
   return (

@@ -88,7 +88,7 @@ const [selectedDepartmentId,
             className="btn-primary"
             onClick={() =>
               navigate(
-                "/departments/create"
+                "/dashboard/departments/create"
               )
             }
           >
@@ -123,7 +123,7 @@ const [selectedDepartmentId,
       className="text-blue-600 hover:underline"
       onClick={() =>
         navigate(
-          `/departments/${row.id}`
+          `/dashboard/departments/${row.id}`
         )
       }
     >
@@ -155,7 +155,7 @@ const [selectedDepartmentId,
           className="text-blue-600 hover:underline"
           onClick={() =>
             navigate(
-              `/departments/${row.id}`
+              `/dashboard/departments/${row.id}`
             )
           }
         >
@@ -166,7 +166,7 @@ const [selectedDepartmentId,
           className="text-green-600 hover:underline"
           onClick={() =>
             navigate(
-              `/departments/edit/${row.id}`
+              `/dashboard/departments/edit/${row.id}`
             )
           }
         >

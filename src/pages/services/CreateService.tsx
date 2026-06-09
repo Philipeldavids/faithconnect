@@ -41,7 +41,7 @@ export default function CreateService() {
         );
 
         navigate(
-          "/services"
+          "/dashboard/services"
         );
       },
     });

@@ -136,7 +136,7 @@ const deleteMutation =
             className="text-blue-600 hover:underline"
             onClick={() =>
               navigate(
-                `/users/${row.id}`
+                `/dashboard/users/${row.id}`
               )
             }
           >
@@ -147,7 +147,7 @@ const deleteMutation =
             className="text-green-600 hover:underline"
             onClick={() =>
               navigate(
-                `/users/edit/${row.id}`
+                `/dashboard/users/edit/${row.id}`
               )
             }
           >
@@ -158,7 +158,7 @@ const deleteMutation =
             className="text-purple-600 hover:underline"
             onClick={() =>
               navigate(
-                `/users/${row.id}/roles`
+                `/dashboard/users/${row.id}/roles`
               )
             }
           >

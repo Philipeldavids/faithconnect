@@ -91,7 +91,7 @@ export default function Templates() {
         title="Templates"
         action={
           <Link
-            to="/communications/templates/create"
+            to="/dashboard/communications/templates/create"
             className="btn-primary"
           >
             Add Template
@@ -152,7 +152,7 @@ export default function Templates() {
                 className="text-blue-600"
                 onClick={() =>
                   navigate(
-                    `/communications/templates/${row.id}`
+                    `/dashboard/communications/templates/${row.id}`
                   )
                 }
               >
@@ -169,7 +169,7 @@ export default function Templates() {
                 className="text-green-600"
                 onClick={() =>
                   navigate(
-                    `/communications/templates/edit/${row.id}`
+                    `/dashboard/communications/templates/edit/${row.id}`
                   )
                 }
               >

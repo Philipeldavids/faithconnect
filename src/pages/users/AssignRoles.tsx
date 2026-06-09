@@ -86,7 +86,7 @@ const allRoles =
           "Roles updated"
         );
 
-        navigate("/users");
+        navigate("/dashboard/users");
       },
     });
 

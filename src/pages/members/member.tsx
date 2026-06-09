@@ -86,7 +86,7 @@ const deleteMutation =
             className="btn-primary"
             onClick={() =>
               navigate(
-                "/members/create"
+                "/dashboard/members/create"
               )
             }
           >
@@ -106,7 +106,7 @@ const deleteMutation =
       className="text-blue-600 hover:underline"
       onClick={() =>
         navigate(
-          `/members/${row.id}`
+          `/dashboard/members/${row.id}`
         )
       }
     >
@@ -145,7 +145,7 @@ const deleteMutation =
             className="text-blue-600 hover:underline"
             onClick={() =>
               navigate(
-                `/members/${row.id}`
+                `/dashboard/members/${row.id}`
               )
             }
           >

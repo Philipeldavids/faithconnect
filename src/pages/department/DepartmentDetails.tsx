@@ -84,6 +84,7 @@ export default function DepartmentDetails() {
     departmentId={id!}
     onSuccess={() =>
       setShowAssign(false)
+     
     }
   />
 </Modal>

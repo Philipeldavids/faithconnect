@@ -76,7 +76,7 @@ export default function ServicesPage() {
             className="btn-primary"
             onClick={() =>
               navigate(
-                "/services/create"
+                "/dashboard/services/create"
               )
             }
           >
@@ -125,7 +125,7 @@ export default function ServicesPage() {
                 className="text-blue-600"
                 onClick={() =>
                   navigate(
-                    `/services/${row.id}`
+                    `/dashboard/services/${row.id}`
                   )
                 }
               >
@@ -139,7 +139,7 @@ export default function ServicesPage() {
                 className="text-green-600"
                 onClick={() =>
                   navigate(
-                    `/services/edit/${row.id}`
+                    `/dashboard/services/edit/${row.id}`
                   )
                 }
               >

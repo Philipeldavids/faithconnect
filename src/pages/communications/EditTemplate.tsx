@@ -73,7 +73,7 @@ export default function EditTemplate() {
         );
 
         navigate(
-          "/communications/templates"
+          "/dashboard/communications/templates"
         );
       },
     });

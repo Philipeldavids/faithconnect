@@ -102,7 +102,7 @@ export default function EditUser() {
         );
 
         navigate(
-          "/users"
+          "/dashboard/users"
         );
       },
 

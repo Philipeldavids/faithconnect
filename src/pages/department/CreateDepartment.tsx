@@ -29,7 +29,7 @@ export default function CreateDepartment() {
         );
 
         navigate(
-          "/departments"
+          "/dashboard/departments"
         );
       },
     });

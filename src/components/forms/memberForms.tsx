@@ -32,7 +32,7 @@ export default function MemberForm() {
           "Member created successfully"
         );
 
-        navigate("/members");
+        navigate("/dashboard/members");
       },
 
       onError: () => {

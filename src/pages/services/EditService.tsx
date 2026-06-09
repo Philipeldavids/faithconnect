@@ -110,7 +110,7 @@ export default function EditService() {
         );
 
         navigate(
-          "/services"
+          "/dashboard/services"
         );
       },
 

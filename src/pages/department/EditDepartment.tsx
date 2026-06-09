@@ -51,7 +51,7 @@ export default function EditDepartment() {
         );
 
         navigate(
-          "/departments"
+          "/dashboard/departments"
         );
       },
     });
