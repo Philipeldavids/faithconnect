@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { navigation } from "../../lib/constants/navigation";
 
 export default function Sidebar() {
-  const LogoUrl = "https://res.cloudinary.com/dck7rspdt/image/upload/v1781781089/faithconnect1_hr1d9r.png";
+  const LogoUrl = "https://res.cloudinary.com/dck7rspdt/image/upload/v1781782419/faithconnect2_ntl4pu.png";
   const location = useLocation();
 
   const [expanded, setExpanded] =

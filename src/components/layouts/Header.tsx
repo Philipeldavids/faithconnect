@@ -279,11 +279,11 @@ export default function Header() {
                     isPortal
                   ) {
                     navigate(
-                      "/portal/profile"
+                      "/profile"
                     );
                   } else {
                     navigate(
-                      "/profile"
+                      "/dashboard/profile"
                     );
                   }
                 }}

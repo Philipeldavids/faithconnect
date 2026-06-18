@@ -301,7 +301,17 @@ export const router =
 {
   path: "attendance/reports",
   element: <AttendanceReports />
-}
+},
+   {
+      path: "profile",
+      element:
+        <MyProfile />,
+    },
+     {
+      path: "settings/change-password",
+      element:
+      <ChangePasswordPage/>
+    }
       ],
     },
     {
