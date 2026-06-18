@@ -25,7 +25,7 @@ import {
 export default function Header() {
   const navigate =
     useNavigate();
- const LogoUrl = "https://res.cloudinary.com/dck7rspdt/image/upload/v1781008293/GhConnectLogo_n8yk7q.png";
+ const LogoUrl = "https://res.cloudinary.com/dck7rspdt/image/upload/v1781781089/faithconnect1_hr1d9r.png";
   const location =
     useLocation();
 
@@ -372,7 +372,7 @@ export default function Header() {
     setOpen(false);
 
     navigate(
-      "/settings/change-password"
+      "/dashboard/settings/change-password"
     );
   }}
 >
