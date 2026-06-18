@@ -14,7 +14,7 @@ import type { MenuItem } from "../types/navigation";
 export const navigation: MenuItem[] = [
   {
     title: "Dashboard",
-    path: "dashboard",
+    path: "",
     icon: LayoutDashboard,
     roles: ["ChurchAdmin", "Pastor"],
   },
