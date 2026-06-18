@@ -84,7 +84,7 @@ export const router =
 
       children: [
         {
-          path: "/dashboard",
+          path: "/",
           element: <Dashboard />,
         },
 
