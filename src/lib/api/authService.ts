@@ -31,6 +31,20 @@ export const authService = {
       }
     ),
 
+    resetPassword: (
+  userId: string
+) =>
+  api.post(
+    `/users/${userId}/reset-password`
+  ),
+
+changePassword: (
+  data: any
+) =>
+  api.post(
+    "/users/change-password",
+    data
+  ),
   logout: (
     refreshToken: string
   ) =>

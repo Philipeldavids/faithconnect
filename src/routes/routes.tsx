@@ -22,7 +22,7 @@ import CreateTemplate from "../pages/communications/CreateTemplate"
 import LoginPage from "../pages/auth/LoginPage";
 import RegisterPage from "../pages/auth/RegisterPage";
 import AssignRoles from "../pages/users/AssignRoles"
-import UserDetails from "../pages/users\/UserDetails"
+import UserDetails from "../pages/users/UserDetails"
 import EditUser from "../pages/users/EditUser"
 import Dashboard from "../pages/dashboard/dashboard";
 import ServicesPage from "../pages/services/ServicePage";
@@ -61,6 +61,7 @@ import UsersPage from "../pages/users/UsersPage";
 import CreateUser from "../pages/users/CreateUsers";
 import RolesPage from "../pages/roles/RolesPage";
 import PermissionsPage from "../pages/permissions/PermissionsPage";
+import ChangePasswordPage from "../pages/auth/ChangePasswordPage";
 
 export const router =
   createBrowserRouter([
@@ -83,7 +84,7 @@ export const router =
 
       children: [
         {
-          index: true,
+          path: "/dashboard",
           element: <Dashboard />,
         },
 
@@ -324,7 +325,12 @@ export const router =
       element:
         <MyProfile />,
     },
-
+    {
+      path: "settings/change-password",
+      element:
+      <ChangePasswordPage/>
+    }
+    ,
     {
       path: "attendance",
       element:

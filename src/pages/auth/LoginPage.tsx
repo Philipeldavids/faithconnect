@@ -77,7 +77,17 @@ navigate(
         toast.success(
           "Login successful"
         );
+if (
+  response.data
+    .forcePasswordChange
+)
+{
+  navigate(
+    "/dashboard/settings/change-password"
+  );
 
+  return;
+}
       },
 
       onError: (

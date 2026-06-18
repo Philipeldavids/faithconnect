@@ -18,7 +18,7 @@ from "../../components/layouts/PageHeader";
 
 import DataTable
 from "../../components/tables/DataTable";
-
+import { authService } from "../../lib/api/authService";
 import { userService }
 from "../../lib/api/userService";
 
@@ -76,6 +76,26 @@ const deleteMutation =
   const users =
     data?.data ?? [];
 
+    const resetPasswordMutation =
+  useMutation({
+    mutationFn: (
+      id: string
+    ) =>
+      authService
+        .resetPassword(id),
+
+    onSuccess: () => {
+      toast.success(
+        "Password reset successfully"
+      );
+    },
+
+    onError: () => {
+      toast.error(
+        "Unable to reset password"
+      );
+    },
+  });
   return (
     <>
       <PageHeader
@@ -164,7 +184,20 @@ const deleteMutation =
           >
             Roles
           </button>
-
+            <button
+  className="
+    text-orange-600
+    hover:underline
+  "
+  onClick={() =>
+    resetPasswordMutation
+      .mutate(
+        row.id
+      )
+  }
+>
+  Reset Password
+</button>
           <button
             className="text-red-600 hover:underline"
             onClick={() => {

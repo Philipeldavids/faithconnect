@@ -1,5 +1,6 @@
 import {
   Bell,
+  KeyRound,
   User,
   LogOut,
   ChevronDown,
@@ -357,7 +358,28 @@ export default function Header() {
                   Admin Dashboard
                 </button>
               )}
+              <button
+  className="
+    w-full
+    px-4
+    py-3
+    flex
+    items-center
+    gap-3
+    hover:bg-gray-50
+  "
+  onClick={() => {
+    setOpen(false);
 
+    navigate(
+      "/settings/change-password"
+    );
+  }}
+>
+  <KeyRound size={18} />
+
+  Change Password
+</button>
               <hr />
 
               {/* Logout */}

@@ -9,6 +9,7 @@ export interface LoginResponse {
   fullName: string;
   email: string;
   roles: string[];
+  forcePasswordChange: boolean;
 }
 
 export interface RegisterDto {
